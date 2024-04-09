@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: url(images/Norse-Bold.otf);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    padding: 20px;
+    box-shadow: 13px 11px 9px rgba(0, 247, 255, 0.189);
+    width: auto;
+    height: 670px;
+}
+
+/* .leaf_img {
+    z-index: -2;
+}
+
+.odin_logo {
+    z-index: -1;
+} */
+
+.textarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form {
+    box-shadow: 13px 11px 9px rgba(0, 0, 0, 0.189);
+}
+
+form button {
+    background-color: rgb(3, 193, 85);
+    color: white;
+}
+
+button:hover {
+    background: linear-gradient(70deg, cream);
+}
+
+a:visited {
+    color: purple;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
