@@ -15,11 +15,9 @@ body {
 }
 
 .content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;
+    display: flex;
+    column-gap: 50px;
     padding: 20px;
-    box-shadow: 13px 11px 9px rgba(0, 247, 255, 0.189);
     width: auto;
     height: 670px;
 }
@@ -34,18 +32,29 @@ body {
 
 .textarea {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-self: center;
+    align-self: center;
+    margin-top: 70px;
 }
 
 form {
     box-shadow: 13px 11px 9px rgba(0, 0, 0, 0.189);
+    position: relative;
+    top: 150px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-form button {
+button {
     background-color: rgb(3, 193, 85);
     color: white;
+    margin-top: 20px;
+    border-radius: 14px;
+    border: 1px solid rgb(0, 255, 255);
+    width: 100px;
+    height: 30px;
+    margin-bottom: 30px;
 }
 
 button:hover {
@@ -62,4 +71,14 @@ input:invalid {
 
 input:valid {
     border-color: green;
+}
+
+span {
+    margin-top: 50px;
+    position: relative;
+    top: 200px;
+}
+
+input {
+    text-align: center;
 }
